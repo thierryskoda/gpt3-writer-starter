@@ -33,6 +33,10 @@ const Home = () => {
     setIsGenerating(false)
   }
 
+  function downloadExtension() {
+    alert(`Coming soon 🎉`)
+  }
+
   return (
     <div className="root">
       <Head>
@@ -50,7 +54,10 @@ const Home = () => {
               you!
             </h2>
           </div>
-          <div className="download-extension-wrapper">
+          <div
+            className="download-extension-wrapper"
+            onClick={downloadExtension}
+          >
             <p>
               Like what you see? <a>Download the chrome extension</a> 🎉
             </p>
